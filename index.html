@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Black Background Website</title>
+  <title>Website de Fundo Preto</title>
   <style>
     body {
       background-color: black;
       color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .image-container {
+      width: 300px;
+      height: 300px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .link {
+      margin-top: 20px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <img src="https://media.discordapp.net/attachments/1065343487073063072/1118182526578589696/cartaz_instalacao_audiovisual_artificializando_o_pavilhao_philips.jpg?width=611&height=611" alt="Your Image" width="400" height="300">
-  <br>
-  <a href="https://sidequestvr.com/app/2226/rebocando-o-pavilho-philips">Clique aqui</a> para baixar o aplicativo.
+  <div class="image-container">
+    <img src="https://media.discordapp.net/attachments/1065343487073063072/1118182526578589696/cartaz_instalacao_audiovisual_artificializando_o_pavilhao_philips.jpg" alt="Sua imagem">
+  </div>
+  <div class="link">
+    <a href="https://sidequestvr.com/app/2226/rebocando-o-pavilho-philips">Clique aqui</a> para baixar o aplicativo.
+  </div>
 </body>
 </html>
